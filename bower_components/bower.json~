@@ -1,0 +1,8 @@
+{
+    "name": "thirdeye-standalone-web",
+    "description": "A Standalone BP monitoring framework called ThirdEye",
+    "version": "0.1.0"
+    "dependencies": {
+    "bootstrap-sass-official": "~3.1.1"
+  }
+}
