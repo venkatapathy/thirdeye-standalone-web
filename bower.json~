@@ -1,0 +1,29 @@
+{
+  "name": "thirdeye-standalone-web",
+  "version": "0.1.0",
+  "authors": [
+    "Venkat <venkat.s.iyer@gmail.com>"
+  ],
+  "description": "This is a Standalone Monitoring Framework for Business Process",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "monitoring",
+    "business",
+    "process",
+    "thirdeye"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

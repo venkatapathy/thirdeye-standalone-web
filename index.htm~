@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" ref="bower_components/bootstrap/dist/css/bootstrap.css">
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    ...
+  </table>
+</div>
+</body>
+</html>
