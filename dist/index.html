@@ -7,6 +7,10 @@
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/node_modules/angular-resource/angular-resource.js"></script>
+
+
 
   <link rel="stylesheet" href="css/diagram-js.css" />
   <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
@@ -14,7 +18,7 @@
 </head>
 
 <body>
-  <div class="content" id="js-drop-zone">
+  <div class="content" id="js-drop-zone" style="float:left;">
 
     <div class="message intro">
       <div class="note">
@@ -33,10 +37,43 @@
       </div>
     </div>
 
-    <div class="canvas" id="js-canvas">
+    <div class="canvas" id="js-canvas" >
 	
 </div>
+
+  
   </div>
+
+ <div class="te-properties-panel" ng-app="thirdeyeangular" ng-controller="thirdeyectrl" id="te-properties-panel">
+ 	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">Measuring Points (MP) for {{ elementid }} </div>
+  			<div class="panel-body">
+				 <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>MP Name</th>
+        <th>Type</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="mp in measuringpoints">
+        <td>{{mp.mpName}}</td>
+        <td>{{mp.mpType}}</td>
+        
+      </tr>
+	<tr>
+	 <td><input type="text" ng-model="nmp.mpName"></p></td>
+	 <td><input type="text" ng-model="nmp.mpType"></p></td>
+	</tr>
+      <tbody>
+  </table>
+<a ng-click="saveMeasuringPoint()" class="btn btn-small">create new MeasuringPoint</a>
+			</div>
+		</div>
+ 	</div>
+ </div>
 
   <ul class="buttons">
     <li>
@@ -53,7 +90,7 @@
       </a>
     </li>
   </ul>
-
+ 
   <script src="index.js"></script>
 </html>
 

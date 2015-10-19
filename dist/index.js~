@@ -185,9 +185,8 @@ $(document).on('ready', function() {
 				$scope.nmp.mpType="";
 				Mp.query({id:$scope.elementid},function(data){
 					$scope.measuringpoints=data;
-					$scope.$apply();
 				});
-				
+				$scope.$apply();
 			});
 			
 

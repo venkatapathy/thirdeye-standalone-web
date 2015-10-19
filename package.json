@@ -8,7 +8,8 @@
     "url": "https://github.com/venkatapathy/thirdeye-standalone-web.git"
   },
   "keywords": [
-    "monitoring", "business process"
+    "monitoring",
+    "business process"
   ],
   "author": {
     "name": "Venkatapathy Subramanian",
@@ -32,6 +33,8 @@
     "load-grunt-tasks": "~0.3.0"
   },
   "dependencies": {
+    "angular": "^1.4.7",
+    "angular-resource": "^1.4.7",
     "bpmn-js": "^0.11.0",
     "diagram-js": "^0.11.0",
     "jquery": "^2.1.1",
